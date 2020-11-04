@@ -9,7 +9,7 @@ const wrapper = document.getElementById("root");
 const App = () => {
   return (
     <div className="flex justify-center items-center h-full w-full">
-      <Button />
+      <Button></Button>
     </div>
   );
 };

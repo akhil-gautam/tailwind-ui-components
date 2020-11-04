@@ -11,14 +11,7 @@ React UI components build on top of TailwindCSS
 ### Usage :zap:
 
 ```
-<Button />
-
-
-It also accepts child components which can be used to set Icons on the buttons.
-
-<Button>
-  <YouFavouriteIconComponent />
-</Button>
+<Button> Submit </Button>
 
 ```
 
@@ -27,13 +20,14 @@ It also accepts child components which can be used to set Icons on the buttons.
 ### Optional Props:
 
 ```javascript
-1. classes: string,
-2. bg: string,
-3. radius: string,
-4. shadow: string,
-5. color: string,
-6. hoverAnimation: string,
-7. disabled: string,
+1. label: string
+2. classes: string,
+3. bg: string,
+4. radius: string,
+5. shadow: string,
+6. color: string,
+7. hoverAnimation: string,
+8. disabled: string,
 ```
 
 
