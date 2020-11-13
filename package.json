@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dstart": "npm run watch:css && npm run devstart",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack serve --config webpack.dev.js --open 'Google Chrome' --hot",
+    "start": "webpack serve --config webpack.dev.js --hot",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "keywords": [
