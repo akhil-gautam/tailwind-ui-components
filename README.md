@@ -29,7 +29,8 @@ React UI components build on top of TailwindCSS
 7. hoverAnimation: string,
 8. disabled: string,
 ```
-
+## 2. Card :white_check_mark:	
+DEMO: https://codesandbox.io/s/bold-villani-6d8eo
 
 ## :handshake: Contributing
 We welcome all contributions, whether you're reporting an issue, helping us fix bugs, improve the docs, or spread the word. We also welcome your suggestions and feedback.
