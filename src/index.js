@@ -19,7 +19,7 @@ const App = () => {
           Open Dropdown&nbsp;&#8595;
         </Button>
 
-        <Dropdown isOpen={open} onClose={handleClose}>
+        <Dropdown isOpen={open} onClose={handleClose} align="left">
           <DropdownItem>
             <div>Notifications</div>
             <div>3</div>
