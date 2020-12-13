@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className="flex items-center justify-center w-full h-full">
       <div className="relative">
-        <Button className="w-auto" onClick={handleOpen}>
+        <Button className="w-auto" onClick={handleOpen} type="danger">
           Open Dropdown&nbsp;&#8595;
         </Button>
 
