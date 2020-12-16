@@ -13,7 +13,7 @@ const App = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="flex items-center justify-center w-full h-full">
+    <div className="flex justify-center items-center w-full h-full">
       <div className="relative">
         <Button className="w-auto" onClick={handleOpen} type="danger">
           Open Dropdown&nbsp;&#8595;
