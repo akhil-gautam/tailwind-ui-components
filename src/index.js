@@ -9,7 +9,7 @@ const wrapper = document.getElementById('root');
 const App = () => {
   return (
     <div className="flex justify-center items-center w-full h-full px-32">
-      <TextInput className="w-2/3" error="there is an error" />
+      <TextInput className="w-2/3" valid/>
     </div>
   );
 };
