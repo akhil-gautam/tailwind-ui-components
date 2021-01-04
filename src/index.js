@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
 import './assets/main.scss';
-import { Modal, Button } from '../lib/components';
+import { Table, Thead, Th, Tr, Tbody, Td } from '../lib/components';
 
 const wrapper = document.getElementById('root');
 
@@ -11,22 +11,49 @@ const App = () => {
   const onClose = () => setopen(false);
 
   return (
-    <div className="flex justify-center items-center w-full h-full px-32">
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <header>
-          <h4 className="font-bold text-lg mb-4">I'm a beautifull header</h4>
-        </header>
-        <div>This is a body element</div>
-        <footer>
-          <hr className="my-4"/>
-          <div className="flex justify-end space-x-4">
-          <Button />
-          <Button />
-          <Button />
-          </div>
-
-        </footer>
-      </Modal>
+    <div className='flex justify-center items-center w-full h-full px-32'>
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>Name</Th>
+            <Th>Roll</Th>
+            <Th>Marks</Th>
+            <Th>Passed</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          <Tr>
+            <Td>Akhil</Td>
+            <Td>12</Td>
+            <Td>56</Td>
+            <Td>Yes</Td>
+          </Tr>
+          <Tr>
+            <Td>Akhil</Td>
+            <Td>12</Td>
+            <Td>56</Td>
+            <Td>Yes</Td>
+          </Tr>
+          <Tr>
+            <Td>Akhil</Td>
+            <Td>12</Td>
+            <Td>56</Td>
+            <Td>Yes</Td>
+          </Tr>
+          <Tr>
+            <Td>Akhil</Td>
+            <Td>12</Td>
+            <Td>56</Td>
+            <Td>Yes</Td>
+          </Tr>
+          <Tr>
+            <Td>Akhil</Td>
+            <Td>12</Td>
+            <Td>56</Td>
+            <Td>Yes</Td>
+          </Tr>
+        </Tbody>
+      </Table>
     </div>
   );
 };
