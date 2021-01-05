@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: '[name].build.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -16,7 +16,8 @@ module.exports = {
   ],
   devServer: {
     compress: true,
-    disableHostCheck: true, // That solved it
+    disableHostCheck: true,
+    publicPath: '/',
   },
   module: {
     rules: [
