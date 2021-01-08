@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
 import './assets/main.scss';
-import { List, ListItem } from '../lib/components';
+import { Alert, ListItem, List } from '../lib/components';
 
 const wrapper = document.getElementById('root');
 
@@ -11,8 +11,9 @@ const App = () => {
   const onClose = () => setopen(false);
 
   return (
-    <div className='flex justify-center items-center w-full h-full px-32 bg-amber-200'>
-      <List header="This marks the heading">
+    <div className='flex flex-col justify-center items-center w-full h-full px-32 bg-amber-200'>
+      <Alert>This is a message for you.</Alert>
+      <List header='This marks the heading'>
         <ListItem>This is a beautiful text.</ListItem>
         <ListItem>This is a beautiful text.</ListItem>
         <ListItem>This is a beautiful text.</ListItem>
