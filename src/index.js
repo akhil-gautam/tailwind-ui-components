@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
 import './assets/main.scss';
-import { Alert, ListItem, List } from '../lib/components';
+import { Alert, ListItem, List, Avatar } from '../lib/components';
 
 const wrapper = document.getElementById('root');
 
@@ -12,9 +12,14 @@ const App = () => {
 
   return (
     <div className='flex flex-col justify-center items-center w-full mt-8 px-32 bg-amber-200'>
-      <Alert onClose={() => (alert('hello'))}>This is a message for you.</Alert>
-      <Alert onClose={() => (alert('hello'))} variant="default" type="warning">This is a message for you.</Alert>
-      <Alert onClose={() => (alert('hello'))} variant="filled" type="error">This is a message for you.</Alert>
+      <Alert onClose={() => alert('hello')}>This is a message for you.</Alert>
+      <Alert onClose={() => alert('hello')} variant='default' type='warning'>
+        This is a message for you.
+      </Alert>
+      <Alert onClose={() => alert('hello')} variant='filled' type='error'>
+        This is a message for you.
+      </Alert>
+      <Avatar src='https://bit.ly/2Lvc3a1' size='small'/>
       <List>
         <ListItem>This is a beautiful text.</ListItem>
         <ListItem>This is a beautiful text.</ListItem>
