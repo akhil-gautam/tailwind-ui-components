@@ -11,9 +11,11 @@ const App = () => {
   const onClose = () => setopen(false);
 
   return (
-    <div className='flex flex-col justify-center items-center w-full h-full px-32 bg-amber-200'>
+    <div className='flex flex-col justify-center items-center w-full mt-8 px-32 bg-amber-200'>
       <Alert>This is a message for you.</Alert>
-      <List header='This marks the heading'>
+      <Alert variant="default" type="warning">This is a message for you.</Alert>
+      <Alert variant="filled" type="error">This is a message for you.</Alert>
+      <List>
         <ListItem>This is a beautiful text.</ListItem>
         <ListItem>This is a beautiful text.</ListItem>
         <ListItem>This is a beautiful text.</ListItem>
