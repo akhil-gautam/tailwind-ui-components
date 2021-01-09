@@ -12,9 +12,9 @@ const App = () => {
 
   return (
     <div className='flex flex-col justify-center items-center w-full mt-8 px-32 bg-amber-200'>
-      <Alert>This is a message for you.</Alert>
-      <Alert variant="default" type="warning">This is a message for you.</Alert>
-      <Alert variant="filled" type="error">This is a message for you.</Alert>
+      <Alert onClose={() => (alert('hello'))}>This is a message for you.</Alert>
+      <Alert onClose={() => (alert('hello'))} variant="default" type="warning">This is a message for you.</Alert>
+      <Alert onClose={() => (alert('hello'))} variant="filled" type="error">This is a message for you.</Alert>
       <List>
         <ListItem>This is a beautiful text.</ListItem>
         <ListItem>This is a beautiful text.</ListItem>
