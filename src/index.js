@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-
 import './assets/main.scss';
+
 import { Alert, Select, Option } from '../lib/components';
 
 const wrapper = document.getElementById('root');
@@ -16,9 +16,6 @@ const App = () => {
       <Alert onClose={() => alert('hello')} variant='default' type='warning'>
         This is a message for you.
       </Alert>
-      {/* <label className='flex flex-col space-y-2'>
-        <span>Choose from</span>
-      </label> */}
       <Select aria-label='select'>
         <Option>Elephant</Option>
         <Option>Caterpillar</Option>
