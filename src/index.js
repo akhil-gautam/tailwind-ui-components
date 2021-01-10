@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './assets/main.scss';
 
-import { Alert, Select, Option } from '../lib/components';
+import { Alert, Label, TextInput } from '../lib/components';
 
 const wrapper = document.getElementById('root');
 
@@ -16,11 +16,10 @@ const App = () => {
       <Alert onClose={() => alert('hello')} variant='default' type='warning'>
         This is a message for you.
       </Alert>
-      <Select aria-label='select'>
-        <Option>Elephant</Option>
-        <Option>Caterpillar</Option>
-        <Option>Potasium</Option>
-      </Select>
+      <Label variant='outlined'>
+        <span>First Name</span>
+        <TextInput placeholder='Enter these'/>
+      </Label>
     </div>
   );
 };
