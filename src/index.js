@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './assets/main.scss';
 
-import { Alert, Label, TextInput, HelperText } from '../lib/components';
+import { Alert, TextInput, TextArea } from '../lib/components';
 
 const wrapper = document.getElementById('root');
 
@@ -23,10 +23,8 @@ const App = () => {
         helperChild='Name should be atleast 5 chars long'
         helperType='warn'
       />
-      <TextInput
-        labelChild='Last Name'
-        placeholder='Enter these'
-      />
+      <TextInput labelChild='Last Name' placeholder='Enter these' />
+      <TextArea rows={5} placeholder="I am inside a textarea"/>
     </div>
   );
 };
