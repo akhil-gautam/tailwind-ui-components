@@ -21,14 +21,11 @@ const App = () => {
         labelVariant='outlined'
         placeholder='Enter these'
         helperChild='Name should be atleast 5 chars long'
-        helperType='error'
+        helperType='warn'
       />
       <TextInput
         labelChild='Last Name'
-        labelVariant='outlined'
         placeholder='Enter these'
-        helperChild='Name should be atleast 5 chars long'
-        helperType='success'
       />
     </div>
   );
