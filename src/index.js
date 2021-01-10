@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './assets/main.scss';
 
-import { Alert, Label, TextInput } from '../lib/components';
+import { Alert, Label, TextInput, HelperText } from '../lib/components';
 
 const wrapper = document.getElementById('root');
 
@@ -16,10 +16,20 @@ const App = () => {
       <Alert onClose={() => alert('hello')} variant='default' type='warning'>
         This is a message for you.
       </Alert>
-      <Label variant='outlined'>
-        <span>First Name</span>
-        <TextInput placeholder='Enter these'/>
-      </Label>
+      <TextInput
+        labelChild='First Name'
+        labelVariant='outlined'
+        placeholder='Enter these'
+        helperChild='Name should be atleast 5 chars long'
+        helperType='error'
+      />
+      <TextInput
+        labelChild='Last Name'
+        labelVariant='outlined'
+        placeholder='Enter these'
+        helperChild='Name should be atleast 5 chars long'
+        helperType='success'
+      />
     </div>
   );
 };
