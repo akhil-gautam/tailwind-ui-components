@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
 import './assets/main.scss';
-import { Alert, ListItem, List, Avatar, Button } from '../lib/components';
+import { Alert, Select, Option } from '../lib/components';
 
 const wrapper = document.getElementById('root');
 
@@ -16,22 +16,14 @@ const App = () => {
       <Alert onClose={() => alert('hello')} variant='default' type='warning'>
         This is a message for you.
       </Alert>
-      <Alert onClose={() => alert('hello')} variant='filled' type='error'>
-        This is a message for you.
-      </Alert>
-      <Avatar src='https://bit.ly/2Lvc3a1' size='small' />
-      <Button LeftIcon={BellIcon} type='primary'>
-        Submit
-      </Button>
-      <List>
-        <ListItem>This is a beautiful text.</ListItem>
-        <ListItem>This is a beautiful text.</ListItem>
-        <ListItem>This is a beautiful text.</ListItem>
-        <ListItem>This is a beautiful text.</ListItem>
-        <ListItem>This is a beautiful text.</ListItem>
-        <ListItem>This is a beautiful text.</ListItem>
-        <ListItem>This is a beautiful text.</ListItem>
-      </List>
+      {/* <label className='flex flex-col space-y-2'>
+        <span>Choose from</span>
+      </label> */}
+      <Select aria-label='select'>
+        <Option>Elephant</Option>
+        <Option>Caterpillar</Option>
+        <Option>Potasium</Option>
+      </Select>
     </div>
   );
 };
