@@ -4,7 +4,7 @@ React UI components build on top of TailwindCSS
 <br/>
 <br/>
 
-Preview URL(incomplete): https://6bx2c.sse.codesandbox.io/
+Preview URL(incomplete): https://5imqx.sse.codesandbox.io/
 
 # Components :electric_plug:
 
